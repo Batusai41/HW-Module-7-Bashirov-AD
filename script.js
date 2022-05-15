@@ -52,22 +52,22 @@ document.getElementById('zero').addEventListener('click', function () {
 })
 
 document.getElementById('plus').addEventListener('click', function () {
-   lastOperand = parseInt(inputWindow.value);
-   operation = 'plus';
-   inputWindow.value = '';
+    lastOperand = parseInt(inputWindow.value);
+    operation = 'plus';
+    inputWindow.value = '';
 })
 
 document.getElementById('minus').addEventListener('click', function () {
     lastOperand = parseInt(inputWindow.value);
     operation = 'minus';
     inputWindow.value = '';
- })
+})
 
- document.getElementById('multi').addEventListener('click', function () {
+document.getElementById('multi').addEventListener('click', function () {
     lastOperand = parseInt(inputWindow.value);
     operation = 'multi';
     inputWindow.value = '';
- })
+})
 
 document.getElementById('divide').addEventListener('click', function () {
     lastOperand = parseInt(inputWindow.value);
@@ -78,7 +78,7 @@ document.getElementById('divide').addEventListener('click', function () {
 document.getElementById('Square').addEventListener('click', function () {
     lastOperand = parseInt(inputWindow.value);
     operation = 'Square';
-    inputWindow.value = '';
+    inputWindow.value = Math.sqrt(inputWindow.value);
 })
 
 document.getElementById('resalt').addEventListener('click', function () {
@@ -87,29 +87,20 @@ document.getElementById('resalt').addEventListener('click', function () {
         operation = null;
         lastOperand = 0;
         inputWindow.value = result;
-    }
-    else if (operation === 'minus'){
+    } else if (operation === 'minus') {
         const result = lastOperand - parseInt(inputWindow.value);
         operation = null;
         lastOperand = 0;
         inputWindow.value = result;
-    }
-    else if (operation === 'multi'){
+    } else if (operation === 'multi') {
         const result = lastOperand * parseInt(inputWindow.value);
         operation = null;
         lastOperand = 0;
         inputWindow.value = result;
-    }
-    else if (operation === 'divide'){
+    } else if (operation === 'divide') {
         const result = lastOperand / parseInt(inputWindow.value);
         operation = null;
         lastOperand = 0;
         inputWindow.value = result;
-    }
-    else if (operation === 'Square'){
-        const result = lastOperand (Math.sqrt(inputWindow.value));
-        operation = null;
-        lastOperand = 0;
-        inputWindow.value = result;
-    }
+    } 
 })
