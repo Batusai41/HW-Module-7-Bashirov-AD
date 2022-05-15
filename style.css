@@ -1,0 +1,46 @@
+.calc-row {
+    height: 100vh;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+.input-window {
+    text-align: end;
+    font-size: x-large;
+}
+
+.buttons {
+    display: inline-block;
+    height: 220px;
+    margin: 40px;
+    font-size: 40px;
+    margin-top: 0;
+}
+
+#one,
+#two,
+#three,
+#four,
+#five,
+#six,
+#seven,
+#eight,
+#nine,
+#plus,
+#minus,
+#multi,
+#resalt,
+#zero,
+#divide,
+#Square {
+    background-color: blue;
+    color: white;
+}
+
+.card-body {
+    background-color: black;
+}
+
+#btn_clr {
+    background-color: brown;
+    color: white;
+}
